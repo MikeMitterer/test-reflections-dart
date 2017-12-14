@@ -13,6 +13,8 @@ const String _DEFAULT_ENTRY_POINT = "web/main.dart";
 
 /// Builds all the xxx.reflectable.dart files
 ///
+///     dart tool/build.dart
+///
 /// For tests:
 ///     dart tool/build.dart test/**/*.dart
 Future main(List<String> arguments) async {
