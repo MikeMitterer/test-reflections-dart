@@ -1,0 +1,41 @@
+name: 'reflection_test_browser2'
+
+version: 0.0.1
+description: An absolute bare-bones web app.
+#author: Your Name <email@example.com>
+#homepage: https://www.example.com
+
+environment:
+  sdk: '>=1.0.0 <2.0.0'
+
+dependencies:
+  browser: '>=0.10.0 <0.11.0'
+  intl: '^0.15.0'
+
+  reflection_test_pkgref:
+    path: ../pkgref
+        
+dev_dependencies:
+  test: any
+  
+  dart_to_js_script_rewriter: '^0.1.0'
+  
+  reflectable:
+    #'^1.0.0'
+    # git: git@github.com:dart-lang/reflectable.git
+    path: ../_repo/reflectable/reflectable
+
+  glob: ^1.1.5
+
+transformers:
+- dart_to_js_script_rewriter
+
+#- reflectable:
+#    entry_points:
+#      - web/main.dart # The path to your main file
+#    # formatted: true # Optional.
+#
+
+#web:
+#  compiler:
+#    debug: dartdevc
